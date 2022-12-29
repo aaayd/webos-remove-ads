@@ -34,7 +34,7 @@ check_install() {
     # Check if installed. If not do install. If installed run from install location to ensure applying user settings
     if [ ! -f "/var/lib/webosbrew/init.d/webos_custom_home_screen" ]; then
         echo "Script is not installed. Installing."
-        curl -s -L https://raw.githubusercontent.com/farkmarnum/webos-custom-home-screen/main/webos_custom_home_screen > /var/lib/webosbrew/init.d/webos_custom_home_screen
+        curl -s -L https://raw.githubusercontent.com/aaayd/webos-remove-ads/main/webos_custom_home_screen > /var/lib/webosbrew/init.d/webos_custom_home_screen
         chmod +x /var/lib/webosbrew/init.d/webos_custom_home_screen
     else
     script_name1=`basename $0`
